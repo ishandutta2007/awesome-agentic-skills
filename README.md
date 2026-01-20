@@ -1,159 +1,162 @@
-# Awesome Agentic Skills
+# 🚀 Awesome Agentic Skills: Revolutionizing AI-Powered Software Development
 
-Awesome Agentic Skills is a complete software development workflow for your coding agents, built on top of a set of composable "skills" and some initial instructions that make sure your agent uses them.
+Welcome to **Awesome Agentic Skills**, your comprehensive toolkit for empowering coding agents and supercharging your software development workflow. Built on a foundation of composable "skills" and intelligent instructions, this system transforms the way AI agents approach coding tasks, driving unprecedented productivity and code quality.
 
-## How it works
+Are you looking to:
+*   Accelerate your development cycles with intelligent automation?
+*   Ensure high-quality, systematically tested code from your AI assistants?
+*   Empower your agents to understand, plan, and execute complex engineering tasks autonomously?
 
-It starts from the moment you fire up your coding agent. As soon as it sees that you're building something, it *doesn't* just jump into trying to write code. Instead, it steps back and asks you what you're really trying to do. 
+Then **Awesome Agentic Skills** is for you!
 
-Once it's teased a spec out of the conversation, it shows it to you in chunks short enough to actually read and digest. 
+## ✨ Key Features & How It Works
 
-After you've signed off on the design, your agent puts together an implementation plan that's clear enough for an enthusiastic junior engineer with poor taste, no judgement, no project context, and an aversion to testing to follow. It emphasizes true red/green TDD, YAGNI (You Aren't Gonna Need It), and DRY. 
+Our system guides your AI coding agents through a robust software development lifecycle, ensuring meticulous attention to detail and adherence to best practices.
 
-Next up, once you say "go", it launches a *subagent-driven-development* process, having agents work through each engineering task, inspecting and reviewing their work, and continuing forward. It's not uncommon for Claude to be able to work autonomously for a couple hours at a time without deviating from the plan you put together.
+1.  **💡 Intelligent Design & Specification (Brainstorming Skill)**:
+    *   Your agent doesn't just jump into coding. It engages in an interactive design refinement process, asking clarifying questions and exploring alternatives.
+    *   Designs are presented in manageable chunks for your review and validation, ensuring alignment with your vision.
+    *   *Outcome*: Clear, validated specifications before a single line of code is written.
 
-There's a bunch more to it, but that's the core of the system. And because the skills trigger automatically, you don't need to do anything special. Your coding agent just has Awesome Agentic Skills.
+2.  **🏗️ Automated, Detailed Planning (Writing Plans Skill)**:
+    *   Once a design is approved, the agent crafts a precise implementation plan.
+    *   Tasks are broken down into bite-sized units (2-5 minutes each), complete with exact file paths, code snippets, and verification steps.
+    *   *Outcome*: A foolproof roadmap for development, minimizing ambiguities and errors.
 
+3.  **🤖 Autonomous Subagent-Driven Development (Executing Plans / SDD Skills)**:
+    *   With your approval, the system launches a powerful subagent-driven development process.
+    *   Specialized subagents tackle individual engineering tasks, with continuous inspection and review of their work.
+    *   *Outcome*: High levels of autonomy, allowing agents to work for hours without deviating from the plan, significantly boosting developer productivity.
 
-## Sponsorship
+4.  **✅ Rigorous Test-Driven Development (TDD Skill)**:
+    *   Enforces a strict RED-GREEN-REFACTOR cycle.
+    *   Agents write failing tests first, observe the failure, write minimal code to pass the test, and then refactor.
+    *   *Outcome*: Robust, well-tested code from the ground up, reducing bugs and technical debt.
 
-If Awesome Agentic Skills has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd consider [sponsoring my opensource work](https://github.com/sponsors/obra).
+5.  **🧐 Continuous Code Quality & Review (Requesting Code Review Skill)**:
+    *   Between tasks, agents perform self-reviews against the established plan and quality metrics.
+    *   Identifies and reports potential issues by severity, with critical issues blocking further progress until resolved.
+    *   *Outcome*: Proactive quality assurance and adherence to coding standards.
 
-Thanks! 
+6.  **🌿 Isolated Development Environments (Using Git Worktrees Skill)**:
+    *   Ensures a clean, isolated workspace for each development branch.
+    *   Automatically handles project setup and verifies a clean test baseline.
+    *   *Outcome*: Conflict-free development and reliable testing environments.
 
-- Jesse
+7.  ** 마무리 Streamlined Branch Finalization (Finishing a Development Branch Skill)**:
+    *   Upon task completion, verifies all tests pass.
+    *   Presents clear options for merging, creating pull requests, keeping, or discarding the worktree.
+    *   *Outcome*: Efficient project management and seamless integration of changes.
 
+## 🌟 Why Choose Awesome Agentic Skills?
 
-## Installation
+*   **Boost Developer Productivity**: Let AI agents handle the grunt work, from planning to testing.
+*   **Ensure Code Quality**: Built-in TDD and rigorous review processes.
+*   **Systematic Approach**: Say goodbye to ad-hoc coding; embrace a structured, repeatable workflow.
+*   **Empower AI Agents**: Unlock the full potential of your coding assistants with a comprehensive skill set.
+*   **Seamless Integration**: Designed to activate automatically, enhancing your existing agent setup.
 
-**Note:** Installation differs by platform. Claude Code has a built-in plugin system. Codex and OpenCode require manual setup.
+## 🛠️ Installation Guide
 
-### Claude Code (via Plugin Marketplace)
+**Note:** Installation methods vary by platform.
 
-In Claude Code, register the marketplace first:
+### For Claude Code Users (Recommended via Plugin Marketplace)
 
-```bash
-/plugin marketplace add obra/Awesome Agentic Skills-marketplace
-```
+1.  **Register the Marketplace**:
+    ```bash
+    /plugin marketplace add obra/Awesome Agentic Skills-marketplace
+    ```
+2.  **Install the Plugin**:
+    ```bash
+    /plugin install Awesome Agentic Skills@Awesome Agentic Skills-marketplace
+    ```
 
-Then install the plugin from this marketplace:
+### Verify Installation (All Platforms)
 
-```bash
-/plugin install Awesome Agentic Skills@Awesome Agentic Skills-marketplace
-```
-
-### Verify Installation
-
-Check that commands appear:
-
+Check for the new commands:
 ```bash
 /help
 ```
-
+You should see commands similar to:
 ```
-# Should see:
 # /Awesome Agentic Skills:brainstorm - Interactive design refinement
 # /Awesome Agentic Skills:write-plan - Create implementation plan
 # /Awesome Agentic Skills:execute-plan - Execute plan in batches
 ```
 
-### Codex
+### For Codex Users
 
-Tell Codex:
-
+Instruct Codex to fetch and follow the installation script:
 ```
 Fetch and follow instructions from https://raw.githubusercontent.com/obra/Awesome Agentic Skills/refs/heads/main/.codex/INSTALL.md
 ```
+For detailed documentation, refer to: [docs/README.codex.md](docs/README.codex.md)
 
-**Detailed docs:** [docs/README.codex.md](docs/README.codex.md)
+### For OpenCode Users
 
-### OpenCode
-
-Tell OpenCode:
-
+Instruct OpenCode to fetch and follow the installation script:
 ```
 Fetch and follow instructions from https://raw.githubusercontent.com/obra/Awesome Agentic Skills/refs/heads/main/.opencode/INSTALL.md
 ```
+For detailed documentation, refer to: [docs/README.opencode.md](docs/README.opencode.md)
 
-**Detailed docs:** [docs/README.opencode.md](docs/README.opencode.md)
+## 📚 What's Inside: The Skills Library
 
-## The Basic Workflow
+Explore the powerful skills that drive **Awesome Agentic Skills**:
 
-1. **brainstorming** - Activates before writing code. Refines rough ideas through questions, explores alternatives, presents design in sections for validation. Saves design document.
+### **Testing & Quality Assurance**
+*   **test-driven-development**: The essential RED-GREEN-REFACTOR cycle, including references for avoiding testing anti-patterns.
+*   **verification-before-completion**: Ensures fixes are truly fixed, not just superficially addressed.
 
-2. **using-git-worktrees** - Activates after design approval. Creates isolated workspace on new branch, runs project setup, verifies clean test baseline.
+### **Debugging & Reliability**
+*   **systematic-debugging**: A robust 4-phase process for root cause analysis, incorporating techniques like root-cause-tracing, defense-in-depth, and condition-based-waiting.
 
-3. **writing-plans** - Activates with approved design. Breaks work into bite-sized tasks (2-5 minutes each). Every task has exact file paths, complete code, verification steps.
+### **Collaboration & Workflow Management**
+*   **brainstorming**: Socratic design refinement for optimal solutions.
+*   **writing-plans**: Generates highly detailed and actionable implementation plans.
+*   **executing-plans**: Facilitates batch execution with human checkpoints for critical oversight.
+*   **dispatching-parallel-agents**: Enables concurrent subagent workflows for enhanced efficiency.
+*   **requesting-code-review**: Prepares code for review with a comprehensive checklist.
+*   **receiving-code-review**: Guides agents in effectively responding to feedback.
+*   **using-git-worktrees**: Manages parallel development branches for isolated feature work.
+*   **finishing-a-development-branch**: Streamlines the merge/PR decision workflow and cleanup.
+*   **subagent-driven-development**: Offers fast iteration with a two-stage review process (spec compliance, then code quality).
 
-4. **subagent-driven-development** or **executing-plans** - Activates with plan. Dispatches fresh subagent per task with two-stage review (spec compliance, then code quality), or executes in batches with human checkpoints.
+### **Meta-Skills (Developing & Understanding the System)**
+*   **writing-skills**: A guide to creating new skills following best practices, including testing methodology.
+*   **using-Awesome Agentic Skills**: An introductory guide to understanding and leveraging the entire skills system.
 
-5. **test-driven-development** - Activates during implementation. Enforces RED-GREEN-REFACTOR: write failing test, watch it fail, write minimal code, watch it pass, commit. Deletes code written before tests.
+## 💡 Our Philosophy
 
-6. **requesting-code-review** - Activates between tasks. Reviews against plan, reports issues by severity. Critical issues block progress.
+*   **Test-Driven Development (TDD)**: Always write tests first.
+*   **Systematic over Ad-Hoc**: Prioritize process and proven methodologies over guesswork.
+*   **Complexity Reduction**: Strive for simplicity as the ultimate design goal.
+*   **Evidence over Claims**: Verify all work and changes before declaring success.
 
-7. **finishing-a-development-branch** - Activates when tasks complete. Verifies tests, presents options (merge/PR/keep/discard), cleans up worktree.
+Learn more about the vision behind Awesome Agentic Skills: [Awesome Agentic Skills for Claude Code Blog Post](https://blog.fsck.com/2025/10/09/Awesome Agentic Skills/)
 
-**The agent checks for relevant skills before any task.** Mandatory workflows, not suggestions.
+## 🤝 Contributing
 
-## What's Inside
-
-### Skills Library
-
-**Testing**
-- **test-driven-development** - RED-GREEN-REFACTOR cycle (includes testing anti-patterns reference)
-
-**Debugging**
-- **systematic-debugging** - 4-phase root cause process (includes root-cause-tracing, defense-in-depth, condition-based-waiting techniques)
-- **verification-before-completion** - Ensure it's actually fixed
-
-**Collaboration** 
-- **brainstorming** - Socratic design refinement
-- **writing-plans** - Detailed implementation plans
-- **executing-plans** - Batch execution with checkpoints
-- **dispatching-parallel-agents** - Concurrent subagent workflows
-- **requesting-code-review** - Pre-review checklist
-- **receiving-code-review** - Responding to feedback
-- **using-git-worktrees** - Parallel development branches
-- **finishing-a-development-branch** - Merge/PR decision workflow
-- **subagent-driven-development** - Fast iteration with two-stage review (spec compliance, then code quality)
-
-**Meta**
-- **writing-skills** - Create new skills following best practices (includes testing methodology)
-- **using-Awesome Agentic Skills** - Introduction to the skills system
-
-## Philosophy
-
-- **Test-Driven Development** - Write tests first, always
-- **Systematic over ad-hoc** - Process over guessing
-- **Complexity reduction** - Simplicity as primary goal
-- **Evidence over claims** - Verify before declaring success
-
-Read more: [Awesome Agentic Skills for Claude Code](https://blog.fsck.com/2025/10/09/Awesome Agentic Skills/)
-
-## Contributing
-
-Skills live directly in this repository. To contribute:
-
-1. Fork the repository
-2. Create a branch for your skill
-3. Follow the `writing-skills` skill for creating and testing new skills
-4. Submit a PR
+We welcome contributions! Skills live directly within this repository.
+1.  Fork the repository.
+2.  Create a dedicated branch for your new skill.
+3.  Follow the `writing-skills` guide (located at `skills/writing-skills/SKILL.md`) for best practices in skill creation and testing.
+4.  Submit a Pull Request.
 
 See `skills/writing-skills/SKILL.md` for the complete guide.
 
-## Updating
+## ⬆️ Updating
 
-Skills update automatically when you update the plugin:
-
+Skills automatically update when you update the plugin:
 ```bash
 /plugin update Awesome Agentic Skills
 ```
 
-## License
+## 📜 License
 
-MIT License - see LICENSE file for details
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Support
+## ❓ Support & Community
 
-- **Issues**: https://github.com/obra/Awesome Agentic Skills/issues
-- **Marketplace**: https://github.com/obra/Awesome Agentic Skills-marketplace
+*   **Issues**: Found a bug or have a feature request? Report it on [GitHub Issues](https://github.com/obra/Awesome Agentic Skills/issues).
+*   **Marketplace**: Explore more at the [Awesome Agentic Skills Marketplace](https://github.com/obra/Awesome Agentic Skills-marketplace).
