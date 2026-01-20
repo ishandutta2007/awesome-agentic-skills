@@ -151,6 +151,9 @@ Skills automatically update when you update the plugin:
 ```bash
 /plugin update Awesome Agentic Skills
 ```
+### ✨ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/awesome-agentic-skills&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/awesome-agentic-skills&type=date&legend=top-left)
 
 ## 📜 License
 
