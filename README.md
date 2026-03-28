@@ -107,6 +107,7 @@ Explore the powerful skills that drive **Awesome Agentic Skills**:
 ### **Testing & Quality Assurance**
 *   **test-driven-development**: The essential RED-GREEN-REFACTOR cycle, including references for avoiding testing anti-patterns.
 *   **verification-before-completion**: Ensures fixes are truly fixed, not just superficially addressed.
+*   **SymCLI**: Deterministic symbolic computation engine for exact math verification and C# code analysis.
 
 ### **Debugging & Reliability**
 *   **systematic-debugging**: A robust 4-phase process for root cause analysis, incorporating techniques like root-cause-tracing, defense-in-depth, and condition-based-waiting.
